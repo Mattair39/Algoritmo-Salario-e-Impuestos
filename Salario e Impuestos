@@ -1,0 +1,25 @@
+Algoritmo SalarioEmpleados
+	Definir numerohoras,salario,impuestos,valorhora Como Entero
+	Escribir "Ingrese el numero de horas trabajadas"
+	Leer numerohoras
+	valorhora<-40
+	Si numerohoras<35 Entonces
+		salario<-(numerohoras*valorhora)
+	SiNo
+		salario<-(numerohoras*valorhora)*1.5
+	FinSi
+	Si salario<=2000 Entonces
+		impuestos<-0
+	SiNo
+		Si salario>2000 y salario<2200
+			impuestos<-salario*0.2
+		Sino
+			Si salario>2200
+				impuestos<-salario*0.3
+			FinSi
+		FinSi
+	FinSi
+	
+	Escribir "El salario es: " salario " dolares"
+	Escribir "Los impuestos a pagar son:" impuestos " dolares"
+FinAlgoritmo
